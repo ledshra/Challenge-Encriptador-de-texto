@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><header>Encriptador y Densencriptador:</header></h1>
+    <div class="container" id="hola">
+        <textarea id="texto" placeholder="Ingrese el texto aquí"></textarea>
+        <span width="10px">ingrese solo letras en minuscula:</span>
+        <section>
+            <button class="encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button class="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </section>
+    </div>
+    <div class="container" id="original">
+        <center>
+            <img id="imagenSinMensaje" src="dibujo.png" width="80%" height="60%" alt="Ningún mensaje fue encontrado">
+            <h2>Ningun mensaje fue encontrado:</h2>
+            <p id="descpripcionSinMensaje">Ingrese el texto que deseas encriptar o desencriptar.</p>
+        </center>
+    </div>
+    <div class="container" id="alternativo" style="display: none;">
+        <textarea id="resultado" placeholder="Texto Copiado." readonly></textarea>
+        <center><button class="copiar" onclick="copiarTexto()">Copiar</button></center>
+    </div>
+    <footer>
+      <p>Challenge: Encriptador de texto - Oracle Next Education (ONE) - VLD</p>
+    </footer>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
